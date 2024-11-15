@@ -32,7 +32,7 @@ ${remote_site_url}    https://updatedexample.new
 *** Test Cases ***
 Update Remote Site Settings
     [Tags]                 Deployment Automation
-    Login
+    Home
     GoTo                   ${login_url}lightning/setup/SetupOneHome/home
     TypeText               Quick Find                  Remote Site Settings        delay=2
     ClickText              Remote Site Settings        delay=6
