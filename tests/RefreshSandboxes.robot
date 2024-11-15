@@ -19,4 +19,15 @@ Refresh Sandboxes From list
 
     TypeText               Quick Find                  Sandbox        delay=2
     ClickText              Sandboxes                   delay=2
+
+    #For Each Sandbox in the list above, Refresh
+    FOR  ${sandbox}  IN  @{sandbox_list}
+        ClickText    ${sandbox}                        anchor=Name
+        Sleep        4s
+        ${refresh_unavailable}=                        IsText           days remaining of
+        IF                        '${refresh_unavailable}'=='False' 
+            ClickText                 Refresh
+        END           
+        ClickText                     Sandboxes                        delay=2
+    END
     
