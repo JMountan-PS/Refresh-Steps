@@ -2,7 +2,7 @@
 # before running this suite.
 *** Settings ***
 Library                   DataDriver                  reader_class=TestDataApi    name=named_credentials.csv
-Resource                  ../resources/common.robot
+Resource                  ../resources/common.resource
 Suite Setup               Setup Browser
 Suite Teardown            End suite
 Test Template             Update Named Credentials
