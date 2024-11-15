@@ -6,6 +6,8 @@ Suite Teardown             End suite
 
 *** Variables ***
 @{sandbox_list}        DevTest1    DevTest2
+...                    DevTest3    Int
+...                    QA          UAT
 
 *** Test Cases ***
 Refresh Sandboxes From list
